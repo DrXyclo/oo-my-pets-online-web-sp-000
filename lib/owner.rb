@@ -33,7 +33,7 @@ class Owner
 
 
   def buy_fish(name)
-    pets[:fishes] << Fish.new(name)
+    pets[:fishes] << Fish.new(name)  ## puts a new instance of fish and attributes into the fishes hash 
   end
 
   def buy_cat(name)
