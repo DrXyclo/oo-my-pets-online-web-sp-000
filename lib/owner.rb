@@ -91,7 +91,7 @@ class Owner
   def sell_pets
     
      pets.each do |pet_type, pet_instance_array|
-      binding.pry 
+     # binding.pry 
     
       pet_instance_array.each do |pet_instance|
       # binding.pry 
@@ -109,7 +109,6 @@ class Owner
   end
 
   def list_pets  ### lists numbers of pets using counting instances of each pet and interperlation
-  binding.pry 
     "I have #{pets[:fishes].count} fish, #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s)."  
   end
   
