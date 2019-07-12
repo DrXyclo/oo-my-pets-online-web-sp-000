@@ -99,14 +99,15 @@ class Owner
 
   def sell_pets
     
-    @@pets = {
+
+
+    [fido, tabby, nemo].each {|o| o.mood = "nervous" }
+    
+        @@pets = {
       :fishes => [],
       :dogs => [],
       :cats => []
       }
-
-    [fido, tabby, nemo].each {|o| o.mood = "nervous" }
-     
   end
 
   def list_pets  ### lists numbers of pets using counting instances of each pet and interperlation
