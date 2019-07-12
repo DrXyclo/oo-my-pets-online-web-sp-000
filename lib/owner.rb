@@ -83,6 +83,13 @@ class Owner
       end
     end
     
+
+    # @@pets = {} 
+  
+=end #####################################################################
+
+  def sell_pets
+    
      pets.each do |pet_type, pet_instance_array|
       binding.pry 
     
@@ -93,15 +100,6 @@ class Owner
         #  binding.pry 
       end
     end
-    # @@pets = {} 
-  
-=end #####################################################################
-
-  def sell_pets
-    
-
-
-    [fido, tabby, nemo].each {|o| o.mood = "nervous" }
     
     @@pets = {
       :fishes => [],
