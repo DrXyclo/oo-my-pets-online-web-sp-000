@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
   attr_accessor :name, :pets  
-  attr_reader :species 
+  attr_reader :species  ## you shouldn't able to write/change the species, only read 
   @@owner = []
   @@pets = {
       :fishes => [],
@@ -12,7 +12,7 @@ class Owner
       
   def initialize(name)
     @name = name
-    @species = name 
+    @species = name  ## passes test but can't be correct, because it gives name and species same name 
     @@owner << self
     @pets = pets
    
