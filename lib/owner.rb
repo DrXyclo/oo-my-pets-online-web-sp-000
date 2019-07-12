@@ -82,14 +82,8 @@ class Owner
         [fido, tabby, nemo].each { |o| expect(o.mood).to eq("nervous") }  
       end
     end
-  
-=end #####################################################################
-
-  def sell_pets
     
-   
-      
-    pets.each do |pet_type, pet_instance_array|
+     pets.each do |pet_type, pet_instance_array|
       binding.pry 
     
       pet_instance_array.each do |pet_instance|
@@ -100,6 +94,18 @@ class Owner
       end
     end
     # @@pets = {} 
+  
+=end #####################################################################
+
+  def sell_pets
+    
+    @@pets = {
+      :fishes => [],
+      :dogs => [],
+      :cats => []
+      }
+
+    [fido, tabby, nemo].each {|o| o.mood = "nervous" }
      
   end
 
