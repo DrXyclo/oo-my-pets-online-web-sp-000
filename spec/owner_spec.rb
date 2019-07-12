@@ -143,15 +143,13 @@ describe Owner do
         tabby = Cat.new("Tabby")
         nemo = Fish.new("Nemo")
         [fido, tabby, nemo].each {|o| o.mood = "happy" }
-        binding.pry 
+        
         owner.pets[:dogs] << fido
         owner.pets[:dogs] << Dog.new("Daisy")
         owner.pets[:fishes] << nemo
-        owner.pets[:cats] << Cat.new("Mittens"), \tabby]
-        
-        
-        
-        binding.pry 
+        owner.pets[:cats] << Cat.new("Mittens") 
+        owner.pets[:cats] << tabby
+   
         owner.sell_pets
         owner.pets.each {|type, pets| expect(pets.empty?).to eq(true) }
         [fido, tabby, nemo].each { |o| expect(o.mood).to eq("nervous") }
