@@ -103,7 +103,7 @@ class Owner
 
     [fido, tabby, nemo].each {|o| o.mood = "nervous" }
     
-        @@pets = {
+    @@pets = {
       :fishes => [],
       :dogs => [],
       :cats => []
